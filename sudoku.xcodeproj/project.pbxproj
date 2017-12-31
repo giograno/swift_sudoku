@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4257688F1FF8D7A600EA5DCA /* SudokuTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4257688E1FF8D7A600EA5DCA /* SudokuTest.swift */; };
 		427F38041FF55E670075228E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F38031FF55E670075228E /* main.swift */; };
 		427F380B1FF55E8A0075228E /* sudoku.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F380A1FF55E8A0075228E /* sudoku.swift */; };
+		42AF42A91FF8DE6500E695DF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F38031FF55E670075228E /* main.swift */; };
+		42AF42AA1FF8DE6800E695DF /* sudoku.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F380A1FF55E8A0075228E /* sudoku.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,12 +27,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4257688C1FF8D7A600EA5DCA /* SudokuTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SudokuTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4257688E1FF8D7A600EA5DCA /* SudokuTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudokuTest.swift; sourceTree = "<group>"; };
+		425768901FF8D7A600EA5DCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		427F38001FF55E670075228E /* sudoku */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sudoku; sourceTree = BUILT_PRODUCTS_DIR; };
 		427F38031FF55E670075228E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		427F380A1FF55E8A0075228E /* sudoku.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sudoku.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		425768891FF8D7A600EA5DCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		427F37FD1FF55E670075228E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -40,10 +53,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4257688D1FF8D7A600EA5DCA /* SudokuTest */ = {
+			isa = PBXGroup;
+			children = (
+				4257688E1FF8D7A600EA5DCA /* SudokuTest.swift */,
+				425768901FF8D7A600EA5DCA /* Info.plist */,
+			);
+			path = SudokuTest;
+			sourceTree = "<group>";
+		};
 		427F37F71FF55E670075228E = {
 			isa = PBXGroup;
 			children = (
 				427F38021FF55E670075228E /* sudoku */,
+				4257688D1FF8D7A600EA5DCA /* SudokuTest */,
 				427F38011FF55E670075228E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				427F38001FF55E670075228E /* sudoku */,
+				4257688C1FF8D7A600EA5DCA /* SudokuTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +92,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4257688B1FF8D7A600EA5DCA /* SudokuTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 425768931FF8D7A600EA5DCA /* Build configuration list for PBXNativeTarget "SudokuTest" */;
+			buildPhases = (
+				425768881FF8D7A600EA5DCA /* Sources */,
+				425768891FF8D7A600EA5DCA /* Frameworks */,
+				4257688A1FF8D7A600EA5DCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SudokuTest;
+			productName = SudokuTest;
+			productReference = 4257688C1FF8D7A600EA5DCA /* SudokuTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		427F37FF1FF55E670075228E /* sudoku */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 427F38071FF55E670075228E /* Build configuration list for PBXNativeTarget "sudoku" */;
@@ -95,6 +136,10 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Giovanni Grano";
 				TargetAttributes = {
+					4257688B1FF8D7A600EA5DCA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					427F37FF1FF55E670075228E = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -114,11 +159,32 @@
 			projectRoot = "";
 			targets = (
 				427F37FF1FF55E670075228E /* sudoku */,
+				4257688B1FF8D7A600EA5DCA /* SudokuTest */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		4257688A1FF8D7A600EA5DCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		425768881FF8D7A600EA5DCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AF42AA1FF8DE6800E695DF /* sudoku.swift in Sources */,
+				42AF42A91FF8DE6500E695DF /* main.swift in Sources */,
+				4257688F1FF8D7A600EA5DCA /* SudokuTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		427F37FC1FF55E670075228E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,6 +197,34 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		425768911FF8D7A600EA5DCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 93Y79F553H;
+				INFOPLIST_FILE = SudokuTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ifi.seal.gio.SudokuTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		425768921FF8D7A600EA5DCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 93Y79F553H;
+				INFOPLIST_FILE = SudokuTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ifi.seal.gio.SudokuTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		427F38051FF55E670075228E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -260,6 +354,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		425768931FF8D7A600EA5DCA /* Build configuration list for PBXNativeTarget "SudokuTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				425768911FF8D7A600EA5DCA /* Debug */,
+				425768921FF8D7A600EA5DCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		427F37FB1FF55E670075228E /* Build configuration list for PBXProject "sudoku" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

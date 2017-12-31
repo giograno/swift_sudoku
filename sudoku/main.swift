@@ -11,3 +11,6 @@ import Foundation
 var sud: Sudoku = Sudoku()
 print("Hello, World!")
 
+class T {
+    
+}

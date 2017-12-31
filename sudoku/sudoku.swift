@@ -15,6 +15,8 @@ class Sudoku {
     let _cols     : String
     var _squares  : [String] = []
     var _unitlist : [[String]] = []
+    var _units    = [String: [[String]]]()
+    var _peers    = [String: Set<String>]()
     
     init() {
         _cols     = _digits
@@ -24,7 +26,13 @@ class Sudoku {
                     ["ABC", "DEF", "GHI"].flatMap { rs in
                         ["123", "456", "789"].map { cs in
                             return cross(a: rs, b: cs)}}
-        print(_unitlist)
+        _units = _squares.reduce(into: [:]) { result, key in
+            result[key] = _unitlist.filter { $0.contains(key)}
+        }
+        _peers = _squares.reduce(into: [:]) { result, key in
+            result[key] = _unitlist.filter { $0.contains(key) }.flatMap{$0}
+                .reduce(Set()) { $0.union(CollectionOfOne($1)) }.filter{!$0.elementsEqual(key)}
+        }
     }
     
     func cross(a: String, b: String) -> [String] {
